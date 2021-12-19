@@ -1,13 +1,106 @@
+@font-face {
+    font-family: 'ptBold';
+    src: url('/Fonts/ptserif-bold-webfont.woff2') format('woff2'),
+         url('/Fonts/ptserif-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ptBoldItalic';
+    src: url('Fonts/ptserif-bolditalic-webfont.woff2') format('woff2'),
+         url('Fonts/ptserif-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ptItalic';
+    src: url('/Fonts/ptserif-italic-webfont.woff2') format('woff2'),
+         url('/Fonts/ptserif-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pt';
+    src: url('/Fonts/ptserif-regular-webfont.woff2') format('woff2'),
+         url('/Fonts/ptserif-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* Beginning of default stlying elements */
+:root {
+    /* Coolors has a colorblind option and it would be cool to build that in with php or javascript?
+       https://coolors.co/10002b-240046-3c096c-5a189a-7b2cbf-9d4edd-c77dff-e0aaff -- Current color pallet
+    */
+    --backgroundColor: #10002B;
+    --textColor: #f8f0ff;
+}
 body {
-    background-color: #070707;
+    background-color: var(--backgroundColor);
 }
 h1 {
-    display: flex;
-    justify-content: center;
-    color: white;
+    font-family: 'ptBold';
+    color: var(--textColor);
     font-size: 3em;
 }
+h2 {
+    font-family: 'ptBold';
+    color: var(--textColor);
+    font-size: 2em;
+}
 p {
-    color: white;
+    font-family: 'pt';
+    color: var(--textColor);
     font-size: 1.25em;
+}
+/* Beginning of class styling */
+.internalLink {
+    text-decoration: none;
+    color: var(--textColor)
+}
+.animatedButton {
+    position: relative;
+
+    transition: 500ms ease;
+}
+.animatedButton:hover {
+    transform: scale(1.1);
+}
+.animatedButton::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: var(--textColor);
+    transform: scaleX(0);
+
+    transition: 500ms ease;
+}
+.animatedButton:hover::after {
+    transform: scaleX(1);
+}
+/* Beginning of id styling */
+#navMenu {
+    display: flex;
+    margin-top: -3.5%;
+    width: 100%;
+}
+#logo {
+    margin-left: .5em;
+    font-size: 4em;
+}
+#menuButtons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: auto;
+    padding-left: 5vw;
 }
