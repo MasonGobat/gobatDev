@@ -8,5 +8,3 @@ function displayHeader() {
     document.write('</div>');
     document.write('</div>');
 }
-
-displayHeader();
