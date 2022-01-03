@@ -40,9 +40,12 @@
     */
     --backgroundColor: #10002B;
     --textColor: #f8f0ff;
+    --secTextColor: #7d589c;
+    --darkTextColor: #460186;
 }
 body {
     background-color: var(--backgroundColor);
+    margin: 0;
 }
 h1 {
     font-family: 'ptBold';
@@ -52,9 +55,14 @@ h1 {
 h2 {
     font-family: 'ptBold';
     color: var(--textColor);
-    font-size: 2em;
+    font-size: 2.25em;
 }
-p {
+h3 {
+    font-family: 'ptBold';
+    color: var(--textColor);
+    font-size: 1.75em;
+}
+p, li {
     font-family: 'pt';
     color: var(--textColor);
     font-size: 1.25em;
@@ -63,6 +71,16 @@ p {
 .internalLink {
     text-decoration: none;
     color: var(--textColor)
+}
+.internalLink:visited {
+    color: var(--secTextColor)
+}
+.externalLink {
+    text-decoration: none;
+    color: var(--secTextColor)
+}
+.externalLink:visited {
+    color: var(--darkTextColor)
 }
 .animatedButton {
     position: relative;
@@ -87,6 +105,9 @@ p {
 .animatedButton:hover::after {
     transform: scaleX(1);
 }
+.pageSummary {
+    margin: 0 15% 0 5%;
+}
 /* Beginning of id styling */
 #navMenu {
     display: flex;
@@ -103,4 +124,26 @@ p {
     width: 100%;
     margin: auto;
     padding-left: 5vw;
+}
+#footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -2vw;
+    height: 1px;
+    width: 100vw;
+    background: var(--secTextColor);
+}
+#footer {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    width: 96vw;
+    margin: 0 2vw;
+}
+#footer > p {
+    color: var(--darkTextColor);
+    font-size: .75em;;
 }
