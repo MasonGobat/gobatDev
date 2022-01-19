@@ -107,6 +107,7 @@ p, li {
 }
 .navButton {
     color: var(--textColor);
+    text-decoration: none;
 }
 .pageSummary {
     margin: 0 15% 0 5%;
