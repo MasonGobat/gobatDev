@@ -105,6 +105,9 @@ p, li {
 .animatedButton:hover::after {
     transform: scaleX(1);
 }
+.navButton {
+    color: var(--textColor);
+}
 .pageSummary {
     margin: 0 15% 0 5%;
 }
