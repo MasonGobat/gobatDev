@@ -74,6 +74,10 @@ h3 {
     color: var(--textColor);
     font-size: 1.75em;
 }
+p {
+    margin: 2em 0;
+    text-indent: 2.5em;
+}
 p, li {
     font-family: 'pt';
     color: var(--textColor);
@@ -152,6 +156,15 @@ sup {
     width: 100%;
     margin: auto;
     padding-left: 5vw;
+}
+#essayList {
+    margin: -1em auto auto 5%;
+}
+#essayList > section > section {
+    margin-left: 5%;
+}
+#essayList > section > section > ul{
+    margin-left: 2.5%;
 }
 #footnotes {
     font-size: 1.25em;
