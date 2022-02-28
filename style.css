@@ -45,7 +45,7 @@
     --unclick: #e3c3ff;
     --clicked: #c684ff;
 }
-body#mason a.mason::after, body#essays a.essay::after {
+body#home a.home::after, body#mason a.mason::after, body#essays a.essay::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -180,6 +180,6 @@ sup {
     margin: 0 2vw;
 }
 #footer > p {
-    color: var(--darkTextColor);
+    color: var(--secTextColor);
     font-size: .75em;;
 }
