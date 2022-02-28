@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'ptBold';
-    src: url('/Fonts/ptserif-bold-webfont.woff2') format('woff2'),
-         url('/Fonts/ptserif-bold-webfont.woff') format('woff');
+    src: url('Fonts/ptserif-bold-webfont.woff2') format('woff2'),
+         url('Fonts/ptserif-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: 'ptItalic';
-    src: url('/Fonts/ptserif-italic-webfont.woff2') format('woff2'),
-         url('/Fonts/ptserif-italic-webfont.woff') format('woff');
+    src: url('Fonts/ptserif-italic-webfont.woff2') format('woff2'),
+         url('Fonts/ptserif-italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -27,8 +27,8 @@
 
 @font-face {
     font-family: 'pt';
-    src: url('/Fonts/ptserif-regular-webfont.woff2') format('woff2'),
-         url('/Fonts/ptserif-regular-webfont.woff') format('woff');
+    src: url('Fonts/ptserif-regular-webfont.woff2') format('woff2'),
+         url('Fonts/ptserif-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -42,6 +42,18 @@
     --textColor: #f8f0ff;
     --secTextColor: #7d589c;
     --darkTextColor: #460186;
+    --unclick: #e3c3ff;
+    --clicked: #c684ff;
+}
+body#mason a.mason::after, body#essays a.essay::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: var(--textColor);
+    transform: scale(1.1);
 }
 body {
     background-color: var(--backgroundColor);
@@ -65,22 +77,30 @@ h3 {
 p, li {
     font-family: 'pt';
     color: var(--textColor);
-    font-size: 1.25em;
+    font-size: 1.15em;
+}
+sup {
+    font-family: 'pt';
+    color: var(--unclick);
+    font-size: .75em;
 }
 /* Beginning of class styling */
 .internalLink {
     text-decoration: none;
-    color: var(--textColor)
+    color: var(--unclick)
 }
 .internalLink:visited {
-    color: var(--secTextColor)
+    color: var(--clicked)
 }
 .externalLink {
     text-decoration: none;
-    color: var(--secTextColor)
+    font-weight: 600;
+    font-style: italic;
+    font-size: .95em;
+    color: var(--unclick)
 }
 .externalLink:visited {
-    color: var(--darkTextColor)
+    color: var(--clicked)
 }
 .animatedButton {
     position: relative;
@@ -112,6 +132,10 @@ p, li {
 .pageSummary {
     margin: 0 15% 0 5%;
 }
+.center {
+    width: 60%;
+    margin: auto;
+}
 /* Beginning of id styling */
 #navMenu {
     display: flex;
@@ -128,6 +152,14 @@ p, li {
     width: 100%;
     margin: auto;
     padding-left: 5vw;
+}
+#footnotes {
+    font-size: 1.25em;
+}
+#footnotesList {
+    width: 80%;
+    font-size: .8em;
+    list-style-type: lower-roman;
 }
 #footer::before {
     content: '';
