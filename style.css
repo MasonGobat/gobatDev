@@ -157,6 +157,10 @@ sup {
     margin: auto;
     padding-left: 5vw;
 }
+#essayTitle {
+    font-size: 2.4em;
+    text-align: center;
+}
 #essayList {
     margin: -1em auto auto 5%;
 }
