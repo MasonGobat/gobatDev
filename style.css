@@ -157,6 +157,9 @@ sup {
     margin: auto;
     padding-left: 5vw;
 }
+#mainBody {
+    margin-left: 2em;
+}
 #essayTitle {
     font-size: 2.4em;
     text-align: center;
