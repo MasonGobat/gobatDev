@@ -74,14 +74,17 @@ h3 {
     color: var(--textColor);
     font-size: 1.75em;
 }
-p {
-    margin: 2em 0;
-    text-indent: 2.5em;
-}
 p, li {
     font-family: 'pt';
     color: var(--textColor);
     font-size: 1.15em;
+}
+p {
+    margin: 2em 0;
+    text-indent: 2.5em;
+}
+li {
+    margin: .25em 0;
 }
 sup {
     font-family: 'pt';
