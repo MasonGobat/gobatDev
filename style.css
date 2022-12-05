@@ -91,6 +91,12 @@ sup {
     color: var(--unclick);
     font-size: .75em;
 }
+img {
+    width: 20%;
+    position: absolute;
+    top: 10%;
+    right: 20%;
+}
 /* Beginning of class styling */
 .internalLink {
     text-decoration: none;
