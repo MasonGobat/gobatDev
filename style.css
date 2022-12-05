@@ -38,10 +38,10 @@
     /* Coolors has a colorblind option and it would be cool to build that in with php or javascript?
        https://coolors.co/10002b-240046-3c096c-5a189a-7b2cbf-9d4edd-c77dff-e0aaff -- Current color pallet
     */
-    --backgroundColor: #10002B;
+    --backgroundColor: #09001a;
     --textColor: #f8f0ff;
-    --secTextColor: #7d589c;
-    --darkTextColor: #460186;
+    --secTextColor: #955fc1;
+    --darkTextColor: #6300bf;
     --unclick: #e3c3ff;
     --clicked: #c684ff;
 }
@@ -146,7 +146,7 @@ sup {
 /* Beginning of id styling */
 #navMenu {
     display: flex;
-    margin-top: -3.5%;
+    margin-top: -2.75%;
     width: 100%;
 }
 #logo {
