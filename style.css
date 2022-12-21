@@ -92,10 +92,10 @@ sup {
     font-size: .75em;
 }
 img {
-    width: 20%;
+    width: 20vw;
     position: absolute;
-    top: 15%;
-    right: 20%;
+    top: 15vh;
+    right: 15vw;
 }
 /* Beginning of class styling */
 .internalLink {
