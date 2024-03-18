@@ -38,7 +38,7 @@
     /* Coolors has a colorblind option and it would be cool to build that in with php or javascript?
        https://coolors.co/10002b-240046-3c096c-5a189a-7b2cbf-9d4edd-c77dff-e0aaff -- Current color pallet
     */
-    --backgroundColor: #09001a;
+    --backgroundColor: #070707;
     --textColor: #f8f0ff;
     --secTextColor: #955fc1;
     --darkTextColor: #6300bf;
@@ -152,7 +152,7 @@ img {
 /* Beginning of id styling */
 #navMenu {
     display: flex;
-    margin-top: -2.75%;
+    margin-top: -4vh;
     width: 100%;
 }
 #logo {
@@ -211,4 +211,6 @@ img {
 #footer > p {
     color: var(--secTextColor);
     font-size: .75em;;
+    margin: 0;
+    padding: .5vw 0;
 }
