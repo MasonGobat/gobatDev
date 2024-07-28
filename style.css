@@ -57,12 +57,12 @@ body#home a.home::after, body#mason a.mason::after, body#essays a.essay::after {
 }
 body {
     background-color: var(--backgroundColor);
-    margin: 0;
 }
 h1 {
     font-family: 'ptBold';
     color: var(--textColor);
     font-size: 3em;
+    margin: 0 auto 0 auto;
 }
 h2 {
     font-family: 'ptBold';
@@ -91,12 +91,6 @@ sup {
     color: var(--unclick);
     font-size: .75em;
 }
-img {
-    width: 20vw;
-    position: absolute;
-    top: 15vh;
-    right: 15vw;
-}
 /* Beginning of class styling */
 .internalLink {
     text-decoration: none;
@@ -115,28 +109,8 @@ img {
 .externalLink:visited {
     color: var(--clicked)
 }
-.animatedButton {
-    position: relative;
-
-    transition: 500ms ease;
-}
-.animatedButton:hover {
-    transform: scale(1.1);
-}
-.animatedButton::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 2px;
-    width: 100%;
-    background: var(--textColor);
-    transform: scaleX(0);
-
-    transition: 500ms ease;
-}
-.animatedButton:hover::after {
-    transform: scaleX(1);
+.essayList {
+    margin: -1em auto auto 5em;
 }
 .navButton {
     color: var(--textColor);
@@ -152,35 +126,18 @@ img {
 /* Beginning of id styling */
 #navMenu {
     display: flex;
-    margin-top: -4vh;
     width: 100%;
 }
 #logo {
     margin-left: .5em;
     font-size: 4em;
 }
-#menuButtons {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin: auto;
-    padding-left: 5vw;
+#about {
+    margin-left: 5em;
+    width: 50em;
 }
 #mainBody {
     margin-left: 2em;
-}
-#essayTitle {
-    font-size: 2.4em;
-    text-align: center;
-}
-#essayList {
-    margin: -1em auto auto 5%;
-}
-#essayList > section > section {
-    margin-left: 5%;
-}
-#essayList > section > section > ul{
-    margin-left: 2.5%;
 }
 #footnotes {
     font-size: 1.25em;
@@ -189,28 +146,4 @@ img {
     width: 80%;
     font-size: .8em;
     list-style-type: lower-roman;
-}
-#footer::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -2vw;
-    height: 1px;
-    width: 100vw;
-    background: var(--secTextColor);
-}
-#footer {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    bottom: 0;
-    margin: 0;
-    width: 96vw;
-    margin: 0 2vw;
-}
-#footer > p {
-    color: var(--secTextColor);
-    font-size: .75em;;
-    margin: 0;
-    padding: .5vw 0;
 }
