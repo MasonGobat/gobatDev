@@ -1,5 +1,3 @@
 # Gobat.dev
 ## About
-This is a storage place for developer information in regard to who is stored at this location.
-Currently stored:
-* Mason Gobat
+These are the files that I use to create and display my personal website.
